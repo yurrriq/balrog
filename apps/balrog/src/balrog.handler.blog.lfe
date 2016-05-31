@@ -6,5 +6,5 @@
   ""
   (let [(reply (cowboy_req:reply 200
                  '[#(#"content-type" #"text/plain")]
-                 #"Hello world!" req)))
+                 #"Hello world!" req))]
     `#(ok ,reply ,opts)))
