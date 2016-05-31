@@ -1,8 +1,0 @@
-{application, 'balrog',
- [{description, ""},
-  {vsn, "1"},
-  {modules, ['balrog', 'balrog.sup', 'balrog.app', 'balrog.handler.blog']},
-  {registered, ['balrog.sup']},
-  {applications, [kernel, stdlib, cowboy]},
-  {mod, ['balrog.app', []]},
-  {env, []}]}.

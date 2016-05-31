@@ -1,6 +1,6 @@
 (defmodule balrog.app
   (behaviour application)
-  (export (init 0) (loop 0)))
+  (export (start 2) (stop 1)))
 
 (include-lib "balrog/include/data.lfe")
 
