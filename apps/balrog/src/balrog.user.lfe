@@ -2,9 +2,6 @@
   (behaviour gen_server)
   (export (init 0) (loop 0)))
 
-(eval-when-compile (lfe_io:format "~p\n" (list (code:lib_dir 'balrog 'include))))
-
-
 (include-lib "lutil/include/mnesia-macros.lfe")
 (include-lib "balrog/include/data.lfe")
 
