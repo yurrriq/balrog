@@ -4,5 +4,5 @@
   {modules, ['balrog', 'balrog.sup', 'balrog.app', 'balrog.handler.blog']},
   {registered, ['balrog.sup']},
   {applications, [kernel, stdlib, cowboy]},
-  {mod, ['balrog.app', []]},
+  {mod, {'balrog.app', []}},
   {env, []}]}.

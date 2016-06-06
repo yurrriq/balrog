@@ -1,0 +1,4 @@
+{application, lcfg,
+ [{description, ""},
+  {vsn, ""},
+  {applications, [kernel, stdlib, clj]}]}.

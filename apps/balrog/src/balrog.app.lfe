@@ -6,7 +6,9 @@
 
 (defun start [_type _args]
   "Start the webserver (cowboy)"
-  
+  (logjam:start)
+  (logjam:set-level 'lager_console_backend
+    (lcfg:get-in (lcfg-file:read-local) '[logging log-level]))
   (let* [(routes '[#(_ [#("/" balrog.handler.blog [])])])
 	 (dispatch  (cowboy_router:compile routes))
 	 (`#(ok ,_) (cowboy:start_http 'http 100 '[#(port 8080)] `[#(env [#(dispatch ,dispatch)])]))]
